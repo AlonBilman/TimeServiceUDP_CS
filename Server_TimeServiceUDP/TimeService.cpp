@@ -6,8 +6,10 @@ time_t timer;
 
 void TimeService::updateAnswer()
 {
-   // int type = stoi(request); //the protocol ive used is using ints for communications. 
-    int type = 11;
+    int type = stoi(request); //the protocol ive used is using ints for communications.
+    if (type > 99) //if type is 3 digits
+        type /= 10;
+
     switch (type) {
     case (int)RequestType::GetTime:
         return GetTime();
@@ -31,13 +33,14 @@ void TimeService::updateAnswer()
         return GetWeekOfYear();
     case (int)RequestType::GetDaylightSavings:
         return GetDaylightSavings();
-    case (int)RequestType::GetTimeWithoutDateInCity:
-        return GetTimeWithoutDateInCity();
+    case (int)RequestType::GetTimeWithoutDateInCity: 
+        return GetTimeWithoutDateInCity(stoi(request)%10);
     case (int)RequestType::MeasureTimeLap:
         return MeasureTimeLap();
 
     default:
         cout << "something went wrong, the user didnt use the protocol as intended.\n";
+        strcpy(answer, "");
         return;
     }
 }
@@ -116,10 +119,40 @@ void TimeService::GetDaylightSavings()
     sprintf(answer, "The Daylight Saving is : %d", Daylight);
 
 }
-void TimeService::GetTimeWithoutDateInCity()
+void TimeService::GetTimeWithoutDateInCity(int whatCity)
 {
     time(&timer);
-    tm* info = localtime(&timer);
+    tm* info = gmtime(&timer); // for UTC time
+
+    switch (whatCity)
+    {
+    case (int)RequestType::Doha: // gmt +3
+    {
+        sprintf(answer, "The time in Doha is %d:%d:%d", info->tm_hour +3, info->tm_min, info->tm_sec);
+        break;
+    }
+    case (int)RequestType::Prague: // gmt +2
+    {
+        sprintf(answer, "The time in Prague is %d:%d:%d", info->tm_hour+2, info->tm_min, info->tm_sec);
+        break;
+    }
+    case (int)RequestType::New_York: // gmt -4
+    {
+        sprintf(answer, "The time in New York is %d:%d:%d", info->tm_hour-4, info->tm_min, info->tm_sec);
+        break;
+    }
+
+    case (int)RequestType::Berlin: // gmt +2
+    {
+        sprintf(answer, "The time in Berlin is %d:%d:%d", info->tm_hour+2, info->tm_min, info->tm_sec);
+        break;
+    }
+
+    default:
+        sprintf(answer, "The time is %d:%d:%d", info->tm_hour, info->tm_min, info->tm_sec);
+        break;
+    }
+  
 }
 void TimeService::MeasureTimeLap()
 {

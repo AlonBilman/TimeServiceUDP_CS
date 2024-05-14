@@ -22,7 +22,7 @@ private:
     void GetSecondsSinceBeginingOfMonth();
     void GetWeekOfYear();
     void GetDaylightSavings();
-    void GetTimeWithoutDateInCity();
+    void GetTimeWithoutDateInCity(int whatCity);
     void MeasureTimeLap();
 
 public: 

@@ -1,5 +1,5 @@
-enum class RequestType  {
-    GetTime=1,
+enum class RequestType {
+    GetTime = 1,
     GetTimeWithoutDate,
     GetTimeSinceEpoch,
     GetClientToServerDelayEstimation,
@@ -11,5 +11,13 @@ enum class RequestType  {
     GetWeekOfYear,
     GetDaylightSavings,
     GetTimeWithoutDateInCity,
-    MeasureTimeLap
+    MeasureTimeLap,
+
+
+    //citys 
+    Doha = 1,
+    Prague = 2,
+    New_York = 3,
+    Berlin=4
+
 };
