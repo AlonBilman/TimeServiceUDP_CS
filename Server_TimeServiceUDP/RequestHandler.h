@@ -4,7 +4,7 @@
 
 class RequestHandler
 {
-private: 
+private:
 	SOCKET m_socket;
 
 public:
@@ -14,12 +14,11 @@ public:
 	int client_addr_len = sizeof(client_addr);
 	int bytesSent = 0;
 	int bytesRecv = 0;
-	char sendBuff[255]="0";
-	char recvBuff[255]="0";
+	char sendBuff[255] = "0";
+	char recvBuff[255] = "0";
 	void getReq();
 	void sentRes();
 	void SentErrorCheck();
 	void RecieveErrorCheck();
 
 };
-

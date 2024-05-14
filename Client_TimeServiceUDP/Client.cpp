@@ -47,6 +47,7 @@ void Client::ConnectToServer()
 
 void Client::start()
 {
+	int question = 0;
 
 }
 

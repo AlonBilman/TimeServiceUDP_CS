@@ -8,7 +8,6 @@ private:
 	SOCKET connSocket;
 	sockaddr_in server;
 	
-
 public:
 	RequestHandler(SOCKET socket, sockaddr_in serverAd):connSocket(socket), server(serverAd) {}
 
@@ -21,5 +20,6 @@ public:
 	void sentRes();
 	void SentErrorCheck();
 	void RecieveErrorCheck();
+	void Menu();
 };
 
