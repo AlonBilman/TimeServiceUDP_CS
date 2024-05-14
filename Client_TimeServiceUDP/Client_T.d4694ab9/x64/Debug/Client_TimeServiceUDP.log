@@ -1,3 +1,6 @@
 ﻿  Client.cpp
-C:\Users\orbil\Desktop\TimeServiceUDP_CS\Client_TimeServiceUDP\Client.cpp(11,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  main.cpp
+  Menu.cpp
+  RequestHandler.cpp
+  Generating Code...
   Client_TimeServiceUDP.vcxproj -> C:\Users\orbil\Desktop\TimeServiceUDP_CS\Client_TimeServiceUDP\x64\Debug\Client_TimeServiceUDP.exe
