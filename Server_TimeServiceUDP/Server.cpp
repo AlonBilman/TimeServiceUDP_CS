@@ -22,7 +22,7 @@ void Server::CreateSocket()
 	m_socket = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
 	if (INVALID_SOCKET == m_socket) //check for errors
 	{
-		cout << "Time Server: Error at socket(): " << WSAGetLastError() << endl;
+		cout << "Server: Error at socket(): " << WSAGetLastError() << endl;
 		WSACleanup();
 		return;
 	}
@@ -35,7 +35,7 @@ void Server::BindSocket()
 	serverService.sin_port = htons(TIME_PORT);
 	if (SOCKET_ERROR == bind(m_socket, (SOCKADDR*)&serverService, sizeof(serverService)))
 	{
-		cout << "Time Server: Error at bind(): " << WSAGetLastError() << endl;
+		cout << "Server: Error at bind(): " << WSAGetLastError() << endl;
 		closesocket(m_socket);
 		WSACleanup();
 		return;

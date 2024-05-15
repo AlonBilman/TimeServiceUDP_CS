@@ -39,7 +39,7 @@ void TimeService::updateAnswer()
 
     default:
         cout << "something went wrong, the user didnt use the protocol as intended.\n";
-        strcpy(answer, "");
+        strcpy(answer, "You Did not use the protocol as intended! , ugh");
         return;
     }
 }

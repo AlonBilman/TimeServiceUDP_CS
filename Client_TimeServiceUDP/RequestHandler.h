@@ -17,9 +17,8 @@ public:
 	char recvBuff[255]= "0"; 
 
 	void getReq();
-	void sentRes();
+	void sentRes(bool& finish);
 	void SentErrorCheck();
 	void RecieveErrorCheck();
-	void Menu();
 };
 

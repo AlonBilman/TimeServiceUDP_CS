@@ -7,12 +7,13 @@ class Menu
 public:
     static int printMenu()
     {
+        std::system("cls");
         int choice;
         std::cout << "\n\n";
-        std::cout << "==============================================================================\n";
-        std::cout << "|                        Welcome to the Time Server Client                    |\n";
-        std::cout << "==============================================================================\n\n";
-        std::cout << "Please choose an option:\n\n";
+        std::cout << "================================================================================\n";
+        std::cout << "|                        Welcome to the Time Server Client                     |\n";
+        std::cout << "================================================================================\n";
+        std::cout << "|                         Please choose an option:                             |\n";
         std::cout << "+------------------------------------------------------------------------------+\n";
         std::cout << "| 1.  GetTime                      - Get the current date and time             |\n";
         std::cout << "| 2.  GetTimeWithoutDate           - Get the current time without date         |\n";
@@ -37,16 +38,16 @@ public:
         {
             int secondChoice = 0;
             std::cout << "\n\n";
-            std::cout << "==============================================================================\n";
-            std::cout << "|                    Welcome! Please choose a city:                          |\n";
-            std::cout << "==============================================================================\n\n";
-            std::cout << "What city would you like?\n\n";
-            std::cout << "+------------------------------------------------------------------------------+\n";
+            std::cout << "===============================================================================\n";
+            std::cout << "|                    Welcome! Please choose a city:                           |\n";
+            std::cout << "===============================================================================\n";
+            std::cout << "|                     What city would you like?                               |\n";
+            std::cout << "+-----------------------------------------------------------------------------+\n";
             std::cout << "| 1. Doha                                                                     |\n";
             std::cout << "| 2. Prague                                                                   |\n";
             std::cout << "| 3. New York                                                                 |\n";
             std::cout << "| 4. Berlin                                                                   |\n";
-            std::cout << "+------------------------------------------------------------------------------+\n";
+            std::cout << "+-----------------------------------------------------------------------------+\n";
             std::cin >> secondChoice;
             choice = choice * 10 + secondChoice; //to make it 3 digits, for example 123 => 12 with the NewYork option
         }

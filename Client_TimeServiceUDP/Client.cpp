@@ -1,4 +1,5 @@
 #include "Client.h"
+#include "RequestHandler.h"
 #define TIME_PORT	27015 
 
 
@@ -18,20 +19,19 @@ Client::~Client()
 void Client::InitWinsock()
 {
 	// Initialize Winsock (Windows Sockets).
-	WSAData wsaData;
 	if (NO_ERROR != WSAStartup(MAKEWORD(2, 2), &wsaData)) //startup to load dll 
 	{
-		cout << "Time Client: Error at WSAStartup()\n";
+		cout << "Client: Error at WSAStartup()\n";
 		return;
 	}
 }
 void Client::CreateSocket()
 {
 	// Create a socket and connect to an internet address.
-	SOCKET connSocket = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
+	connSocket = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
 	if (INVALID_SOCKET == connSocket)
 	{
-		cout << "Time Client: Error at socket(): " << WSAGetLastError() << endl;
+		cout << "Client: Error at socket(): " << WSAGetLastError() << endl;
 		WSACleanup();
 		return;
 
@@ -47,7 +47,21 @@ void Client::ConnectToServer()
 
 void Client::start()
 {
-	int question = 0;
+	bool finish = false;
+	RequestHandler requestHandler(connSocket, server);
+	char key;
+	while (!finish)
+	{
+		requestHandler.sentRes(finish); 
+		if (!finish)
+		{
+			requestHandler.getReq();
+			std::cout << "\n\n To Continue press any key (and then enter). To exit press 0 : ";
+			cin >> key;
+			if (key == '0')
+				finish = !finish;
+		}
+	}
 
 }
 

@@ -1,2 +1,5 @@
 ﻿  RequestHandler.cpp
-C:\Users\orbil\Desktop\TimeServiceUDP_CS\Server_TimeServiceUDP\RequestHandler.cpp(20,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Server.cpp
+  TimeService.cpp
+  Generating Code...
+  Server_TimeServiceUDP.vcxproj -> C:\Users\orbil\Desktop\TimeServiceUDP_CS\Server_TimeServiceUDP\x64\Debug\Server_TimeServiceUDP.exe

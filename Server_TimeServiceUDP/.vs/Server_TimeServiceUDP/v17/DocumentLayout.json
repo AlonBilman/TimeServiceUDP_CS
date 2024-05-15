@@ -3,18 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\RequestHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|solutionrelative:RequestHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\RequestHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|solutionrelative:RequestHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\TimeService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|solutionrelative:TimeService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\RequestType.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|solutionrelative:RequestType.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -25,6 +13,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\TimeService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|solutionrelative:TimeService.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\TimeService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|solutionrelative:TimeService.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\RequestHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|solutionrelative:RequestHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\RequestHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|solutionrelative:RequestHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14881DA2-2D5D-4AD1-9DA1-B8CE8C43B5B8}|Server_TimeServiceUDP.vcxproj|C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\Server.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 475,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,20 +62,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "RequestType.h",
               "DocumentMoniker": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\RequestType.h",
               "RelativeDocumentMoniker": "RequestType.h",
               "ToolTip": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\RequestType.h",
               "RelativeToolTip": "RequestType.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-14T09:20:50.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
@@ -88,46 +88,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "TimeService.cpp",
               "DocumentMoniker": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\TimeService.cpp",
               "RelativeDocumentMoniker": "TimeService.cpp",
               "ToolTip": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\TimeService.cpp",
               "RelativeToolTip": "TimeService.cpp",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAAADAAAAAQAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAA0AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-14T06:08:56.833Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TimeService.h",
               "DocumentMoniker": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\TimeService.h",
               "RelativeDocumentMoniker": "TimeService.h",
               "ToolTip": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\TimeService.h",
               "RelativeToolTip": "TimeService.h",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-14T06:08:32.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "RequestHandler.cpp",
               "DocumentMoniker": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\RequestHandler.cpp",
               "RelativeDocumentMoniker": "RequestHandler.cpp",
               "ToolTip": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\RequestHandler.cpp",
               "RelativeToolTip": "RequestHandler.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACYAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-14T06:08:55.156Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "RequestHandler.h",
               "DocumentMoniker": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\RequestHandler.h",
               "RelativeDocumentMoniker": "RequestHandler.h",
@@ -159,7 +159,7 @@
               "RelativeDocumentMoniker": "Server.cpp",
               "ToolTip": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Server_TimeServiceUDP\\Server.cpp",
               "RelativeToolTip": "Server.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAABgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-13T19:11:00.128Z",
               "EditorCaption": ""

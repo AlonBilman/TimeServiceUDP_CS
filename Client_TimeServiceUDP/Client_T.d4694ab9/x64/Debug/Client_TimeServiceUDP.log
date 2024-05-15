@@ -1,9 +1,2 @@
 ﻿  Menu.h
-  RequestHandler.cpp
-C:\Users\orbil\Desktop\TimeServiceUDP_CS\Client_TimeServiceUDP\RequestHandler.cpp(17,31): error C2039: 'to_string': is not a member of 'std'
-  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\iostream(18,1):
-  see declaration of 'std'
-  
-C:\Users\orbil\Desktop\TimeServiceUDP_CS\Client_TimeServiceUDP\RequestHandler.cpp(17,31): error C3861: 'to_string': identifier not found
-C:\Users\orbil\Desktop\TimeServiceUDP_CS\Client_TimeServiceUDP\RequestHandler.cpp(18,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  Generating Code...
+  Client_TimeServiceUDP.vcxproj -> C:\Users\orbil\Desktop\TimeServiceUDP_CS\Client_TimeServiceUDP\x64\Debug\Client_TimeServiceUDP.exe
