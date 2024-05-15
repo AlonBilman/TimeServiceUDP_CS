@@ -27,7 +27,7 @@ void RequestHandler::SentErrorCheck()
 		cout << "Server: Error at sendto(): " << WSAGetLastError() << endl;
 		closesocket(m_socket);
 		WSACleanup();
-		return;
+		exit(0);
 	}
 }
 

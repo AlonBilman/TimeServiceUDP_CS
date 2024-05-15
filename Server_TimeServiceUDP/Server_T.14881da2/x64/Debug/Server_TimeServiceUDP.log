@@ -1,5 +1,5 @@
 ﻿  RequestHandler.cpp
   Server.cpp
-  TimeService.cpp
+  main.cpp
   Generating Code...
   Server_TimeServiceUDP.vcxproj -> C:\Users\orbil\Desktop\TimeServiceUDP_CS\Server_TimeServiceUDP\x64\Debug\Server_TimeServiceUDP.exe

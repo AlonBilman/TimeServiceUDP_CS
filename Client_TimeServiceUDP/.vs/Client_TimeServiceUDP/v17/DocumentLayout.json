@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4694AB9-46E1-46F9-96F3-50710836CD70}|Client_TimeServiceUDP.vcxproj|C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\RequestHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4694AB9-46E1-46F9-96F3-50710836CD70}|Client_TimeServiceUDP.vcxproj|solutionrelative:RequestHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D4694AB9-46E1-46F9-96F3-50710836CD70}|Client_TimeServiceUDP.vcxproj|C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4694AB9-46E1-46F9-96F3-50710836CD70}|Client_TimeServiceUDP.vcxproj|solutionrelative:Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4694AB9-46E1-46F9-96F3-50710836CD70}|Client_TimeServiceUDP.vcxproj|C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\Menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -23,8 +23,8 @@
       "RelativeMoniker": "D:0:0:{D4694AB9-46E1-46F9-96F3-50710836CD70}|Client_TimeServiceUDP.vcxproj|solutionrelative:RequestHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4694AB9-46E1-46F9-96F3-50710836CD70}|Client_TimeServiceUDP.vcxproj|C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D4694AB9-46E1-46F9-96F3-50710836CD70}|Client_TimeServiceUDP.vcxproj|solutionrelative:Client.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{D4694AB9-46E1-46F9-96F3-50710836CD70}|Client_TimeServiceUDP.vcxproj|C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\RequestHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D4694AB9-46E1-46F9-96F3-50710836CD70}|Client_TimeServiceUDP.vcxproj|solutionrelative:RequestHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +34,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 475,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Client.cpp",
+              "DocumentMoniker": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\Client.cpp",
+              "RelativeDocumentMoniker": "Client.cpp",
+              "ToolTip": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\Client.cpp",
+              "RelativeToolTip": "Client.cpp",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAEEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-13T19:11:18.054Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -60,7 +74,7 @@
               "RelativeDocumentMoniker": "Menu.h",
               "ToolTip": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\Menu.h",
               "RelativeToolTip": "Menu.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAbAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-14T20:51:16.737Z",
               "EditorCaption": ""
@@ -73,7 +87,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-14T17:50:48.798Z",
               "EditorCaption": ""
@@ -86,7 +100,7 @@
               "RelativeDocumentMoniker": "Client.h",
               "ToolTip": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\Client.h",
               "RelativeToolTip": "Client.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-14T17:47:12.829Z",
               "EditorCaption": ""
@@ -99,7 +113,7 @@
               "RelativeDocumentMoniker": "RequestHandler.h",
               "ToolTip": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\RequestHandler.h",
               "RelativeToolTip": "RequestHandler.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-14T16:58:05.457Z",
               "EditorCaption": ""
@@ -107,25 +121,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Client.cpp",
-              "DocumentMoniker": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\Client.cpp",
-              "RelativeDocumentMoniker": "Client.cpp",
-              "ToolTip": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\Client.cpp",
-              "RelativeToolTip": "Client.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-13T19:11:18.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "RequestHandler.cpp",
               "DocumentMoniker": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\RequestHandler.cpp",
               "RelativeDocumentMoniker": "RequestHandler.cpp",
               "ToolTip": "C:\\Users\\orbil\\Desktop\\TimeServiceUDP_CS\\Client_TimeServiceUDP\\RequestHandler.cpp",
               "RelativeToolTip": "RequestHandler.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-14T17:10:12.903Z",
               "EditorCaption": ""

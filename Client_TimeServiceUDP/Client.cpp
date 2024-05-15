@@ -22,7 +22,7 @@ void Client::InitWinsock()
 	if (NO_ERROR != WSAStartup(MAKEWORD(2, 2), &wsaData)) //startup to load dll 
 	{
 		cout << "Client: Error at WSAStartup()\n";
-		return;
+		exit(0);
 	}
 }
 void Client::CreateSocket()
@@ -33,7 +33,7 @@ void Client::CreateSocket()
 	{
 		cout << "Client: Error at socket(): " << WSAGetLastError() << endl;
 		WSACleanup();
-		return;
+		exit(0);
 
 	}
 }
@@ -48,19 +48,26 @@ void Client::ConnectToServer()
 void Client::start()
 {
 	bool finish = false;
+	bool AlreadyAnswered = false;
 	RequestHandler requestHandler(connSocket, server);
 	char key;
+
 	while (!finish)
 	{
-		requestHandler.sentRes(finish); 
+		requestHandler.sentRes(finish, AlreadyAnswered);
+
+		if (!finish && !AlreadyAnswered)
+			requestHandler.getReq();
+
 		if (!finish)
 		{
-			requestHandler.getReq();
 			std::cout << "\n\n To Continue press any key (and then enter). To exit press 0 : ";
 			cin >> key;
 			if (key == '0')
 				finish = !finish;
 		}
+
+		AlreadyAnswered = false;
 	}
 
 }
