@@ -1,8 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "TimeService.h"
 using namespace std; 
-
-
 void TimeService::updateAnswer()
 {
     int type = stoi(request); //the protocol ive used is using ints for communications.
@@ -40,7 +38,6 @@ void TimeService::updateAnswer()
         return;
     }
 }
-
 void TimeService::GetTime()
 {
    time(&timer);
@@ -54,23 +51,12 @@ void TimeService::GetTimeWithoutDate()
     tm* info = localtime(&timer);
     sprintf(answer, "The time is %d:%d:%d", info->tm_hour, info->tm_min, info->tm_sec);
 }
-
 void TimeService::GetTimeSinceEpoch() //seconds since 1.1.1970
 {
     time(&timer);
     long long secondsSinceTheSeventies = static_cast<long long>(timer); //casting to longlong
     sprintf(answer, "The time since 1970 in seconds is: %lld", secondsSinceTheSeventies);
 }
-
-void TimeService::GetClientToServerDelayEstimation() 
-{
-    
-
-}
-
-
-
-
 void TimeService::GetTimeWithoutDateOrSeconds()
 {
     time(&timer);
@@ -151,7 +137,6 @@ void TimeService::GetTimeWithoutDateInCity(int whatCity)
     }
   
 }
-
 void TimeService::MeasureTimeLap()
 {
     int diff;
@@ -179,5 +164,10 @@ void TimeService::MeasureTimeLap()
         time(&startMeasure); // starting the measure.
         sprintf(answer, "A measure has been started!..");
     }
+
+}
+void TimeService::GetClientToServerDelayEstimation() 
+{
+    
 
 }
