@@ -1,4 +1,8 @@
+
+
+
 enum class RequestType {
+
     GetTime = 1,
     GetTimeWithoutDate,
     GetTimeSinceEpoch,
@@ -13,11 +17,14 @@ enum class RequestType {
     GetTimeWithoutDateInCity,
     MeasureTimeLap,
 
-
     //citys 
     Doha = 1,
     Prague = 2,
     New_York = 3,
-    Berlin=4
+    Berlin = 4,
+
+
+    ThreeDigits = 99,
+    ThreeMinMark = 180 //in seconds!
 
 };

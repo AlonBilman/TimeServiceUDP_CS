@@ -2,12 +2,11 @@
 #include "TimeService.h"
 using namespace std; 
 
-time_t timer; 
 
 void TimeService::updateAnswer()
 {
     int type = stoi(request); //the protocol ive used is using ints for communications.
-    if (type > 99) //if type is 3 digits
+    if (type > (int)RequestType::ThreeDigits) 
         type /= 10;
     switch (type) {
     case (int)RequestType::GetTime:
@@ -18,8 +17,6 @@ void TimeService::updateAnswer()
         return GetTimeSinceEpoch();
     case (int)RequestType::GetClientToServerDelayEstimation: 
         return GetClientToServerDelayEstimation();
-    case (int)RequestType::MeasureRTT:
-        return MeasureRTT();
     case (int)RequestType::GetTimeWithoutDateOrSeconds:
         return GetTimeWithoutDateOrSeconds();
     case (int)RequestType::GetYear:
@@ -39,7 +36,7 @@ void TimeService::updateAnswer()
 
     default:
         cout << "something went wrong, the user didnt use the protocol as intended.\n";
-        strcpy(answer, "You Did not use the protocol as intended! , ugh");
+        strcpy(answer, "You Did not use the protocol as intended!,ugh..");
         return;
     }
 }
@@ -57,6 +54,7 @@ void TimeService::GetTimeWithoutDate()
     tm* info = localtime(&timer);
     sprintf(answer, "The time is %d:%d:%d", info->tm_hour, info->tm_min, info->tm_sec);
 }
+
 void TimeService::GetTimeSinceEpoch() //seconds since 1.1.1970
 {
     time(&timer);
@@ -68,15 +66,9 @@ void TimeService::GetClientToServerDelayEstimation()
 {
     
 
-
 }
 
-void TimeService::MeasureRTT()
-{
 
-
-
-}
 
 
 void TimeService::GetTimeWithoutDateOrSeconds()
@@ -96,7 +88,7 @@ void TimeService::GetMonthAndDay()
 {
     time(&timer);
     tm* info = localtime(&timer);
-    sprintf(answer, "\n The Month is : %d \n The Day is : %d", info->tm_mon, info->tm_wday);
+    sprintf(answer, "\n The Month is : %s | The Day is : %s", months[info->tm_mon].c_str(), days[info->tm_wday].c_str());
 }
 void TimeService::GetSecondsSinceBeginingOfMonth()
 {
@@ -162,7 +154,30 @@ void TimeService::GetTimeWithoutDateInCity(int whatCity)
 
 void TimeService::MeasureTimeLap()
 {
+    int diff;
 
-
+    if (++countForTimeLaps == 2)
+    {
+        time(&endMeasure);
+        diff = difftime(endMeasure, startMeasure);
+        //if 3 min have passed - its a new 
+        if (diff > (int)RequestType::ThreeMinMark)
+        {
+            --countForTimeLaps; //its like the client just started a measure
+            startMeasure = endMeasure;
+            endMeasure = 0;
+            sprintf(answer, "A measure have been started!..");
+        }
+        else
+        {
+            sprintf(answer, "The measure stoped! The timelap was %d seconds:", diff);
+            countForTimeLaps = 0;
+        }
+    }
+    else
+    {
+        time(&startMeasure); // starting the measure.
+        sprintf(answer, "A measure has been started!..");
+    }
 
 }

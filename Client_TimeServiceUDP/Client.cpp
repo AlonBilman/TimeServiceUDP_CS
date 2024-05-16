@@ -55,13 +55,17 @@ void Client::start()
 	while (!finish)
 	{
 		requestHandler.sentRes(finish, AlreadyAnswered);
+		requestHandler.SentErrorCheck();
 
 		if (!finish && !AlreadyAnswered)
+		{
 			requestHandler.getReq();
+			requestHandler.RecieveErrorCheck();
+		}
 
 		if (!finish)
 		{
-			std::cout << "\n\n To Continue press any key (and then enter). To exit press 0 : ";
+			std::cout << "\n\n To Continue press any **char** (and then enter). To exit press 0 : ";
 			cin >> key;
 			if (key == '0')
 				finish = !finish;

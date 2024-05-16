@@ -15,7 +15,6 @@ void RequestHandler::sentRes()
 {
 	bytesSent = sendto(m_socket, sendBuff, (int)strlen(sendBuff), 0, (const sockaddr*)&client_addr, client_addr_len);
 	SentErrorCheck();
-
 	cout << "Server: Sent: " << bytesSent << "\\" << strlen(sendBuff) << " bytes of \"" << sendBuff << "\" message.\n";
 }
 
@@ -30,7 +29,6 @@ void RequestHandler::SentErrorCheck()
 		exit(0);
 	}
 }
-
 
 void RequestHandler::RecieveErrorCheck()
 {
