@@ -23,6 +23,7 @@ public:
 	void SentErrorCheck();
 	void RecieveErrorCheck();
 	void RTT_calc();
+	void Client_delay();
 	
 	
 };

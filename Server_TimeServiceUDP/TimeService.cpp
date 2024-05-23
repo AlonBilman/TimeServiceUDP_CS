@@ -1,6 +1,11 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "TimeService.h"
+#include <Windows.h>
+#include <string>
 using namespace std; 
+
+
+
 void TimeService::updateAnswer()
 {
     int type = stoi(request); //the protocol ive used is using ints for communications.
@@ -139,6 +144,7 @@ void TimeService::GetTimeWithoutDateInCity(int whatCity)
 }
 void TimeService::MeasureTimeLap()
 {
+
     int diff;
 
     if (++countForTimeLaps == 2)
@@ -168,6 +174,7 @@ void TimeService::MeasureTimeLap()
 }
 void TimeService::GetClientToServerDelayEstimation() 
 {
-    
-
+    unsigned int val = GetTickCount();
+    sprintf(answer, std::to_string(val).c_str());//return the val as a string.
+                                                 // this is the protocol
 }
