@@ -13,7 +13,7 @@ void Server::InitWinsock()
 {
 	if (NO_ERROR != WSAStartup(MAKEWORD(2, 2), &wsaData)) {
 		std::cerr << "Error at WSAStartup()\n";
-		exit(0);
+		exit(-1);
 	}
 }
 
@@ -24,7 +24,7 @@ void Server::CreateSocket()
 	{
 		cout << "Server: Error at socket(): " << WSAGetLastError() << endl;
 		WSACleanup();
-		exit(0);
+		exit(-1);
 	}
 }
 
@@ -38,7 +38,7 @@ void Server::BindSocket()
 		cout << "Server: Error at bind(): " << WSAGetLastError() << endl;
 		closesocket(m_socket);
 		WSACleanup();
-		exit(0);
+		exit(-1);
 	}
 }
 

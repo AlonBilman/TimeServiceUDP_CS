@@ -3,7 +3,7 @@
 #include "Menu.h"
 #include <iostream>
 #include <string>
-#include "RequestType.h"
+#include "OperationType.h"
 #include "vector"
 
 void RequestHandler::getReq()
@@ -18,11 +18,11 @@ void RequestHandler::sentRes(bool& finish,bool& Answered)
 {
 	int choice = Menu::printMenu();
 
-	if (choice == (int)RequestType::Exit) { cout << "\nbye!!!\n"; finish = true; return;}// If we want to end the communication
+	if (choice == (int)OperationType::Exit) { cout << "\nbye!!!\n"; finish = true; return;}// If we want to end the communication
 
-	else if (choice == (int)RequestType::CalcRTT) { RTT_calc(); Answered = true; return; }//If we want the client to calculate RTT + flag that we answered the question already.	
+	else if (choice == (int)OperationType::CalcRTT) { RTT_calc(); Answered = true; return; }//If we want the client to calculate RTT + flag that we answered the question already.	
 
-	else if (choice == (int)RequestType::CalcDelay) { Client_delay(); Answered = true; return; }//If we want the client to calculate Delay + flag that we answered the question already.	
+	else if (choice == (int)OperationType::CalcDelay) { Client_delay(); Answered = true; return; }//If we want the client to calculate Delay + flag that we answered the question already.	
 
 	// Convert the integer choice to a string, had to do it like that for some reason...
 	std::string choiceStr = std::to_string(choice);
@@ -39,7 +39,7 @@ void RequestHandler::SentErrorCheck()
 		cout << "Client: Error at sendto(): " << WSAGetLastError() << endl;
 		closesocket(connSocket);
 		WSACleanup();
-		exit(0);
+		return;
 	}
 }
 
@@ -50,7 +50,7 @@ void RequestHandler::RecieveErrorCheck()
 		cout << "Client: Error at recv(): " << WSAGetLastError() << endl;
 		closesocket(connSocket);
 		WSACleanup();
-		exit(0);
+		return;
 	}
 }
 
@@ -79,22 +79,22 @@ void RequestHandler::Client_delay()
 	char DelayEst[] = "4";
 	double avg_answer=0;
 
-	for (int i = 0; i < (int)RequestType::DelayLoopNum; i++) //100 requests in a row
+	for (int i = 0; i < (int)OperationType::DelayLoopNum; i++) //100 requests in a row
 	{
 		sendto(connSocket, DelayEst, sizeof(DelayEst), 0, (const sockaddr*)&server, sizeof(server)); 
 	}
 
-	for (int i = 0; i < (int)RequestType::DelayLoopNum; i++) 
+	for (int i = 0; i < (int)OperationType::DelayLoopNum; i++)
 	{
 		getReq(); // get the answer -> put it in recvBuff
 		TimesToHold.push_back(static_cast<double>(stoi(recvBuff))); //push inside all the time stamps
 	}
 
 	//calculating the avg 
-	for (int i = 0; i < (int)RequestType::DelayLoopNum - 1; i++) 
+	for (int i = 0; i < (int)OperationType::DelayLoopNum - 1; i++)
 		avg_answer += TimesToHold[i+1] - TimesToHold[i];
 
 	std::cout << "\n\n==================================================================";
-	cout << "\n\nThe Client To Server Delay Estimation is : " << avg_answer/ (double)RequestType::DelayLoopNum<<" milliseconds";
+	cout << "\n\nThe Client To Server Delay Estimation is : " << avg_answer/ (double)OperationType::DelayLoopNum<<" milliseconds";
 }
 	

@@ -35,7 +35,7 @@
     <ClInclude Include="Client.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RequestType.h">
+    <ClInclude Include="OperationType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

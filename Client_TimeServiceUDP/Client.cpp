@@ -22,7 +22,7 @@ void Client::InitWinsock()
 	if (NO_ERROR != WSAStartup(MAKEWORD(2, 2), &wsaData)) //startup to load dll 
 	{
 		cout << "Client: Error at WSAStartup()\n";
-		exit(0);
+		exit(-1);
 	}
 }
 void Client::CreateSocket()
@@ -33,7 +33,7 @@ void Client::CreateSocket()
 	{
 		cout << "Client: Error at socket(): " << WSAGetLastError() << endl;
 		WSACleanup();
-		exit(0);
+		exit(-1);
 
 	}
 }

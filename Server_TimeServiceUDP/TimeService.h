@@ -8,7 +8,7 @@ class TimeService
 {
 private:
 
-    time_t timer; 
+    time_t timer=0; 
     int countForTimeLaps = 0;
     //for MeasureTimeLap
     time_t startMeasure = 0;
